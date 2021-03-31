@@ -1,0 +1,43 @@
+/*
+    File: site.css
+    
+    Dominic Macias
+    03/31/2021
+    Stylesheet for the main page
+*/
+
+body {
+    background-color: red;
+}
+
+div {
+    width: 33.33%;
+    float: left;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+    vertical-align: middle;
+    font-family: Tangerine;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 84px;
+}
+
+#center {
+    background-color: white;
+}
+
+#center img {
+    max-height: 251px;
+}

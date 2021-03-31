@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+	File: index.html
+	Dominic Macias
+	03/31/2021
+	
+	Main Holiday Page, Shows number of days until christmas
+-->
+
+<html>
+	<head>
+		<title>Christmas Countdown</title>
+
+		<link rel="stylesheet" href="site.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	</head>
+
+	<body>
+		<div>
+			<img src="dancingsanta.gif">
+		</div>
+
+		<div id="center">
+			<h1 id="countdown"></h1>
+			<h2>Days until Christmas</h2>
+
+			<img src="santathumbsup.gif">
+		</div>
+
+		<div>
+			<img src="dancingsanta.gif">
+		</div>
+
+		<script>
+			const date1 = new Date().getTime();
+			const date2 = new Date('12/25/2021');
+			const diffTime = Math.abs(date2 - date1);
+			const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+
+			document.getElementById("countdown").innerHTML = diffDays;
+		</script>
+	</body>
+</html>
